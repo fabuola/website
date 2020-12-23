@@ -24,19 +24,6 @@
         //==============___Page Loader___================
         $('#loading-wraper').fadeIn(300);
 
-        //==============___Testimonials - owl Carousel___================
-        $("#testimonial-carousel").owlCarousel({
-            navigation: false, // Show next and prev buttons
-            slideSpeed: 300,
-            paginationSpeed: 400,
-            responsiveRefreshRate: 200,
-            responsiveBaseWidth: window,
-            pagination: true,
-            singleItem: true,
-            navigationText: ["<span class='fa fa-chevron-left'></span>", "<span class='fa fa-chevron-right'></span>"],
-        });
-
-
         //==============_Map_================
         $('.map').on('click', function() {
             $('.map-overlay').hide();
@@ -101,29 +88,6 @@
                 $(this).addClass('menuActive');
                 pageOff();
             }
-        });
-
-        //==============___Blog - Ajax___================
-        function loadPost() {
-            $.ajax({
-                url: 'single.html', // URL HERE
-                type: 'GET',
-                success: function(html) {
-
-                    var $lis = $(html).find('#blogPost'); // Loads the content inside #blogPost div
-
-                    $("#postHere").html($lis);
-                }
-            });
-        }
-
-        $(".loadPost").on('click', function(event) {
-            event.preventDefault();
-            //$("#postHere").html('loading...');
-            $('.section-page-active').removeClass('section-page-active');
-            $('#page-blog-single').addClass('section-page-active');
-            pageOn();
-            loadPost();
         });
 
         //==============___Contact Form Validator and Ajax Sender___================

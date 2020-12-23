@@ -7,7 +7,7 @@ header('Content-type: application/json');
 require 'php-mailer/PHPMailerAutoload.php';
 
 // Your email address
-$to = 'youremail@yourserver.com';
+$to = 'fpierre@fsu.edu';
 
 $subject = $_POST['subject'];
 
