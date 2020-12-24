@@ -136,7 +136,8 @@ a:focus {
     transition: all 0.3s ease-in-out;
     border: 0px solid transparent!important;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     z-index: 1;
 }
 
