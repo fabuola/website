@@ -137,7 +137,7 @@ a:focus {
     border: 0px solid transparent!important;
     position: relative;
     overflow: scroll;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: auto;
     z-index: 1;
 }
 
